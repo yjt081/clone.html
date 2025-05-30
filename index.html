@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: sans-serif;
+        background: #e0f7fa;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: lavenderblush;
+      }
+
+      footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+        background: transparent;
+        font-size: 14px;
+      }
+
+      .login-box {
+        background: whitesmoke;
+        padding: 40px;
+        border-radius: 12px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        width: 300px;
+        text-align: center;
+        transition: 0.4s ease;
+      }
+      .login-box:hover {
+        transition: all 0.4s ease-in;
+        background-color: rgb(33, 137, 178);
+        transform: scale(1.03);
+      }
+
+      h2 {
+        font-weight: bolder;
+      }
+
+      input {
+        width: 100%;
+        padding: 10px;
+        margin: 15px 0;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        font-size: 18px;
+        transition: 0.3s all ease;
+      }
+      input:hover {
+        transition: 0.3s all ease;
+        transform: scale(1.03);
+      }
+
+      input:focus {
+        border: 3px solid;
+        border-color: black;
+        outline: none;
+      }
+
+      button {
+        padding: 10px 20px;
+        background: #00796b;
+        margin-left: 30px;
+        margin-right: 50px;
+        margin-top: 25px;
+
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: progress;
+        width: 80%;
+        transition: all 0.7s ease-in-out;
+      }
+
+      button:hover {
+        transition: all 0.7s ease-out;
+        background: #004d40;
+        transform: scale(1.05);
+      }
+
+      .social-login {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 5px;
+      }
+
+      .social-login button {
+        background: #3b5998;
+        padding: 10px 20px;
+        border-radius: 8px;
+      }
+
+      .social-login button:hover {
+        background: #2d4373;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="login-box">
+      <h2>WELCOME TO FACEBOOK</h2>
+      <form>
+        <input type="text" placeholder="Username" required />
+        <input type="password" placeholder="Password" required />
+        <button type="submit">Login</button>
+      </form>
+
+      <div class="social-login">
+        <button>Login with Google</button>
+        <button>Login with X</button>
+      </div>
+    </div>
+    <footer style="text-align: center; margin-top: 20px">
+      <p>&copy; 2025 YASH JADON All rights reserved.</p>
+    </footer>
+  </body>
+</html>
